@@ -1,15 +1,20 @@
-import { useMutation } from 'react-query';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { backConnection } from '../../services/backConnection';
 import { useAlertError } from '../../store/useAlertError';
 import { useAuth } from '../../store/useAuth';
-import { useState } from 'react';
-import { usersMock } from '../../mock/users';
 
 type DataToken = {
   email: string;
   password: string;
 };
+
+const usersMock: DataToken[] = [
+  {
+    email: 'admin@admin',
+    password: 'Admin@1234',
+  },
+];
 
 function postToken(data: DataToken) {
   return backConnection.post('/TokenPost', data);

@@ -1,7 +1,7 @@
 import { lazy, Suspense } from 'react';
 import { Navigate, Outlet, Route } from 'react-router-dom';
-import { AgricultorRegistrarSkeleton } from '../Skeletons/Agricultor.registrar.skeleton';
-import { ErrorSkeleton } from '../Skeletons/Error.skeleton';
+import { AgricultorRegistrarSkeleton } from '../skeletons/Agricultor.registrar.skeleton';
+import { ErrorSkeleton } from '../skeletons/Error.skeleton';
 
 const LazyAgricultorRegistrar = lazy(
   () => import('../pages/Registrar/Agricultor.registrar')

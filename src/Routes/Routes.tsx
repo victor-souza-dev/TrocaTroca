@@ -6,11 +6,11 @@ import {
   Route,
 } from 'react-router-dom';
 import App from '../App';
-import { PrivateRoute } from '../Guards/PrivateRoute';
+import { PrivateRoute } from '../guards/PrivateRoute';
 import { Dashboard } from '../pages/Dashboard/Dashboard';
 import { Login } from '../pages/Login/Login';
-import { AgricultorConsultarSkeleton } from '../Skeletons/Agricultor.consultar.skeleton';
-import { ErrorSkeleton } from '../Skeletons/Error.skeleton';
+import { AgricultorConsultarSkeleton } from '../skeletons/Agricultor.consultar.skeleton';
+import { ErrorSkeleton } from '../skeletons/Error.skeleton';
 import { consultarRoute } from './consultar.route';
 import { registrarRoute } from './registrar.route';
 
