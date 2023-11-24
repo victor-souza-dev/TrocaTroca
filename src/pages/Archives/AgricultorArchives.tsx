@@ -75,6 +75,7 @@ export default function AgricultorArchivesView() {
                       >
                         <FileManager.Colapse nome={id}>
                           <FileManager.List>
+                            {/* @ts-ignore */}
                             {data[cell]?.map((file: any) => {
                               return (
                                 <FileManager.ListItem

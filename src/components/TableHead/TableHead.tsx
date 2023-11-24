@@ -1,16 +1,14 @@
-import { Data } from '../Table/dataCell';
-import { Order } from '../../mock/sortTable';
-import { visuallyHidden } from '@mui/utils';
-import { headCells } from '../Table/headCell';
-import TableRow from '@mui/material/TableRow';
-import TableCell from '@mui/material/TableCell';
-import { StyledArrowSortTable, StyledHead } from './TableHead.style';
-import Box from '@mui/material/Box';
-import { StyledCheckbox } from '../../styles/checkbox';
 import { useTheme } from '@mui/material';
+import Box from '@mui/material/Box';
+import TableCell from '@mui/material/TableCell';
+import TableRow from '@mui/material/TableRow';
 import { ThemeOptions } from '@mui/material/styles';
+import { visuallyHidden } from '@mui/utils';
 import { useSelectedTableStore } from '../../store/useSelectedTableStore';
 import { useTableControl } from '../../store/useTableControl';
+import { StyledCheckbox } from '../../styles/checkbox';
+import { headCells } from '../Table/headCell';
+import { StyledArrowSortTable, StyledHead } from './TableHead.style';
 
 export function TableHead() {
   const { controls, setControls } = useTableControl();
