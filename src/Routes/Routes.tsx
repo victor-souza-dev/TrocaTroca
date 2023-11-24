@@ -1,18 +1,18 @@
-import { lazy, Suspense } from 'react';
 import {
-  createBrowserRouter,
-  createRoutesFromElements,
   Navigate,
   Route,
+  createBrowserRouter,
+  createRoutesFromElements,
 } from 'react-router-dom';
 import App from '../App';
 import { PrivateRoute } from '../guards/PrivateRoute';
 import { Dashboard } from '../pages/Dashboard/Dashboard';
-import { Login } from '../pages/Login/Login';
-import { AgricultorConsultarSkeleton } from '../skeletons/Agricultor.consultar.skeleton';
-import { ErrorSkeleton } from '../skeletons/Error.skeleton';
 import { consultarRoute } from './consultar.route';
 import { registrarRoute } from './registrar.route';
+import { Suspense, lazy } from 'react';
+import { AgricultorConsultarSkeleton } from '../skeletons/Agricultor.consultar.skeleton';
+import { Login } from '../pages/Login/Login';
+import { ErrorSkeleton } from '../skeletons/Error.skeleton';
 
 const LazyHelp = lazy(() => import('../pages/Help/Help'));
 const LazyNotFound = lazy(() => import('../pages/Errors/404'));

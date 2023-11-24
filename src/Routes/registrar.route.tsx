@@ -1,4 +1,4 @@
-import { lazy, Suspense } from 'react';
+import { Suspense, lazy } from 'react';
 import { Navigate, Outlet, Route } from 'react-router-dom';
 import { AgricultorRegistrarSkeleton } from '../skeletons/Agricultor.registrar.skeleton';
 import { ErrorSkeleton } from '../skeletons/Error.skeleton';

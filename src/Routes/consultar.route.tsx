@@ -1,8 +1,8 @@
-import { lazy, Suspense } from 'react';
+import { Suspense, lazy } from 'react';
 import { Navigate, Outlet, Route } from 'react-router-dom';
 import { AgricultorConsultarSkeleton } from '../skeletons/Agricultor.consultar.skeleton';
-import { ErrorSkeleton } from '../skeletons/Error.skeleton';
 import { ProfileSkeleton } from '../skeletons/Profile.skeleton';
+import { ErrorSkeleton } from '../skeletons/Error.skeleton';
 
 const LazyAgricultorProfileEdit = lazy(
   () => import('../pages/Profile/Edit/Agricultor.profile.edit')
